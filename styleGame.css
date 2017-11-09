@@ -1,0 +1,60 @@
+h1 {
+	position: absolute; 
+	top: -50;
+	left: 480;
+	font-size: 80px;
+    color: #2b2b2b;
+    text-align:center;
+	}
+
+#welcome {
+	background-color: #E9967A;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+body {
+	
+}
+
+
+div#memory_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:800px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+
+div#memory_board > div{
+	background: url(tile_bg.jpg) no-repeat;
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	float:left;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
+
+#memoryDiv{
+	padding: 87px;
+}
+/*Button for the Game page*/
+#backGame {
+	position: absolute; 
+	top: 20;
+	right: 30;
+	height:40px;
+	width:190px;
+	font-size:15px;
+}
+
+#backGame:hover {
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

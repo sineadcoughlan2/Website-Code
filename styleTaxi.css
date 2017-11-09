@@ -1,0 +1,61 @@
+/*Order food pae, order taxi page*/
+
+h1 { /*Taxi header on the taxi page*/
+	position: absolute; 
+	top: -30;
+	left: 550;
+	font-size: 60px;
+    color: #2b2b2b;
+    text-align:center;
+}
+
+#welcome {
+	background-color: #E9967A;
+	padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+}
+
+
+#taxi {
+	position: absolute;
+	top: 80;
+	left: 40px;
+	padding-left: 20px
+}
+
+#welcome {
+	background-color: #E9967A;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+#food{
+	position: absolute;
+	top: 80;
+	left: 40px;
+	padding-left: 20px
+	
+}
+
+body {
+	
+}
+
+/*Button the back on the taxi page*/
+#backTaxi {
+	position: absolute; 
+	top: 40;
+	right: 30;
+	height:40px;
+	width:190px;
+	font-size:15px;
+	background-color: white;
+}
+
+#backTaxi:hover {
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

@@ -1,0 +1,148 @@
+<?php
+include("connection_string.php");
+
+
+?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Request a valuation</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/header.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Marvel:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/script11.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script_v.js"></script>
+ 
+  <style type="text/css">
+
+        .page p{
+
+            font-size: 18px;
+
+            font-weight: lighter;
+
+        }
+
+        .page h4{
+
+            font-size: 27px;
+
+            font-family: sans-serif;
+
+            margin-bottom: 6px;
+
+            margin-top: 9px;
+
+        }
+
+    </style>
+</head>
+<body style="background-color: #E9967A">
+
+<div class="clearfix"></div>
+<!-- <h3 style="position:absolute;font-family: 'Abel', sans-serif;font-size: 40px;padding:10px;left: 6.5%; "><b>REQUEST A VALUATION</b></h3> -->
+<div class="col-sm-9 page">
+<div class="col-sm-11 col-sm-offset-1" style="padding: 20px;padding-right: 30px;
+		background-color: #EFEFEF;border:3px solid #A8A8A8;border-radius: 15px;-webkit-box-shadow: 5px 7px 37px -1px rgba(0,0,0,0.56);
+		-moz-box-shadow: 5px 7px 37px -1px rgba(0,0,0,0.56);
+		box-shadow: 5px 7px 37px -1px rgba(0,0,0,0.56); min-height: 500px">
+<!-- Page Started -->
+
+<div style="padding: 30px">
+<br>
+<center><h3 style="font-family: 'Abel', sans-serif;font-size: 40px; "><b>Patient Details</b></h3></center>
+<br>
+    <div class="row">
+    <div class="col-md-10  col-md-offset-1">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><center>personal detail</center>
+            </div>
+            <div class="panel-body">
+            <?php
+            if(isset($_POST['submitt']))
+
+
+                $data=$database->query("SELECT * FROM `patients_detail` where id='".$_POST['patient_id']."' ");
+                while ( $record=$data->fetch()) {
+                  # code...
+                ?>
+
+<form name="myform" >
+                    <br>
+  <table class="table table-bordered table-inverse">
+  <thead>
+    <tr >
+      <th colspan="2"><center>Patient Details</center></th>    
+    </tr>
+  </thead>
+  <tbody>
+
+ <tr>
+      <th scope="row"><label for="firstname">NAME   </label></th>
+      <td> <label ><?php echo $record['name'];?></label></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"><label for="email">PHONE NO</label></th>
+      <td> <label ><label ><?php echo $record['phone'];?></label></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"><label for="officeno">ADDRESS</label></th>
+      <td> <label ><label ><?php echo $record['address'];?></label></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"> <label for="county">PATIENTS ID</label></th>
+      <td> <label ><?php echo $record['patient_id'];?></label></td>
+      
+    </tr>
+    <tr>
+      <th scope="row"> <label for="date">DATE OF BIRTH</label></th>
+      <td><label ><?php echo $record['date_of_birth'];?></label></td>
+      
+    </tr>
+    </tbody>
+</table>          
+                 
+
+</form>
+
+<?php }?>
+ <center>
+	<a href="all_patients_record.php" class="btn btn-danger ">Menu</a>
+	<a href="loaction.php" class="btn btn-danger ">Location</a>
+                    
+                   </center>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Page Ended -->
+</div>
+</div>
+    <div class="col-sm-3" style="padding-right: 4%;">
+    <br><br>
+ 
+        </div>
+    </div>
+</body>
+</html>
+
+
+

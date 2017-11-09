@@ -1,0 +1,47 @@
+
+#welcome {
+	background-color: #E9967A;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+#logout {
+	position: absolute; 
+	top: 35;
+	right: 30;
+	height:40px;
+	width:190px;
+	font-size:15px;
+	background-color: white;
+}
+
+#singlePatButton {
+	position: absolute; 
+	top: 200;
+	left: 280;
+	height:350px;
+	width:350px;
+	font-size: 40px;
+	padding-bottom: 250px;
+	//background-image:url("house.png");
+    background-repeat:no-repeat center center;
+	background-position: <left|right>;
+	padding-<left|right>: 80px;
+	background-color: #E9967A;
+}
+#multPatButton {
+	position: absolute; 
+	top: 200;
+	right: 280;
+	height:350px;
+	width:350px;
+	font-size: 40px;
+	padding-bottom: 250px;
+	background-color: #E9967A;
+}
+
+.button:hover{
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

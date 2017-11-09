@@ -1,0 +1,248 @@
+/*CSS for the Home page,
+The Admin login page,
+The forgot password page,
+The Medical Home page*/
+
+#welcome {
+	background-color: #E9967A;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+#medicalHeader{
+	position: absolute; 
+	top: 65px;
+	font-size: 80px;
+	font-family: 'Abhaya Libre';
+    color: #2b2b2b;
+    text-align:center;
+}
+
+h1{/*Welcome header, Medical header on Medical page*/
+	position: absolute; 
+	top: -34;
+	left: 510;
+	font-size: 80px;
+	font-family: 'Abhaya Libre';
+    color: #2b2b2b;
+    text-align:center;
+}
+
+h2 { /* VCASystem header on the admin login page */
+	position: absolute; 
+	top: -25;
+	left: 430;
+	font-size: 50px;
+	font-family: 'Abhaya Libre';
+    color: #2b2b2b;
+   	text-align:center;
+}
+
+h3{ /*Change password text on forgotPassword Page*/
+	position: absolute; 
+	top: -20;
+	left: 510;
+	font-size: 50px;
+	font-family: 'Abhaya Libre';
+    color: #2b2b2b;
+    text-align:center;
+
+}
+
+h4{ /*PHP password successful change Notification*/
+	position: absolute; 
+	top: 300;
+	left: 200px;
+	font-size: 80px;
+	font-family: 'Abhaya Libre';
+    color: #2b2b2b;
+    text-align:center;
+
+}
+
+#login {
+	position: absolute;
+	top: 45px;
+	right: 30px;
+	width: 130px;
+	height: 40px;
+	font-size: 18px;
+	font-family: 'Abhaya Libre';
+	padding-bottom: 12px;
+	background-color: white;
+}
+
+#homeButton {
+	position: absolute; 
+	top: 200;
+	left: 280;
+	height:350px;
+	width:350px;
+	font-size: 40px;
+	font-family: 'Abhaya Libre';
+	padding-bottom: 250px;
+    background-repeat:no-repeat center center;
+	background-position: <left|right>;
+	background-color: #E9967A;
+}
+
+#img_container {
+	top: 220;
+	left: 280;
+    position:relative;
+    display:inline-block;
+    text-align:center;
+}
+
+#medicalButton {
+	position: absolute; 
+	top: 200;
+	right: 280;
+	height:350px;
+	width:350px;
+	font-size: 40px;
+	font-family: 'Abhaya Libre';
+	padding-bottom: 250px;
+	background-color: #E9967A;
+}
+
+.button:hover{
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#backtoHome {
+	position: absolute; 
+	top: 40;
+	right: 30;
+	height:40px;
+	width:190px;
+	font-size:15px;
+	font-family: 'Abhaya Libre';
+	background-color: white;
+}
+
+#backtoHome1 {
+	position: absolute; 
+	top: 30;
+	right: 30;
+	height:40px;
+	width:190px;
+	font-size:15px;
+	font-family: 'Abhaya Libre';
+	background-color: white;
+}
+
+#backTaxi { /*The back button on all pages to ghet back tot he previous pages*/
+	position: absolute; 
+	top: 20;
+	right: 30;
+	height:40px;
+	width:190px;
+	font-size:15px;
+	font-family: 'Abhaya Libre';
+	background-color: white;
+}
+
+/*Login button on admin login page*/
+#button1{
+	position: absolute;
+	width: 90%;
+   	top: 200px;
+	left: 15px;
+	font-size: 20px;
+	font-family: 'Abhaya Libre';
+	background-color: #E9967A;
+}
+
+/*Cancel Button on admin login page*/
+#button2{
+	position: absolute;
+	width: 90%;
+	top: 200px;
+	left: 205px;
+	font-size: 20px;
+	font-family: 'Abhaya Libre';
+	background-color: #E9967A;
+}
+
+/*Forgot password button on admin login page*/
+#button3{
+	position: absolute;
+	width: 200%;
+	top: 250px;
+	left: 15px;
+	font-size: 20px;
+	background-color: #E9967A;
+}
+
+/*Button for the change password on the forgotPasswordPage*/
+#button4{
+	top: 400px;
+	font-size: 20px;
+	padding-bottom: 10px;
+	background-color: #E9967A;
+  }
+  
+ #button5{ /*Submit button on the Forgotten Password page*/
+	position: absolute;
+	width: 200%;
+	top: 270px;
+	left: 12px;
+	font-size: 20px;
+	background-color: #E9967A;
+}
+
+/*Cancel Button on the Forgot password page*/
+#button6{
+	position: absolute;
+	width: 200%;
+	top: 310px;
+	left: 12px;
+	font-size: 20px;
+	background-color: #E9967A;
+}
+
+form{	
+	position: absolute;
+	top: 210px;
+	right: 600px;
+	left: 500px;
+	height:90px;
+	width: 180px;
+	font-size: 30px;
+	padding-bottom: 180px;
+	}
+	
+input[type=text] {
+    width: 200%;
+    padding: 12px 30px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+	background-color: #FFF8DC;
+}
+
+input[type=password] {
+   	width: 200%;
+	display: center;
+    padding: 12px 30px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+	background-color: #FFF8DC;
+}
+
+label{
+	left: 12px;
+	padding: 20px 15px;
+	font-size: 25px;
+}
+
+div{
+	width: 200%;
+}
+
+
+
+
+
